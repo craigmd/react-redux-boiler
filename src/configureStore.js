@@ -1,13 +1,11 @@
 //Libs
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 
 //Reducers
-import app from './reducers'
+
 
 const configureStore = () => {
-  const store = createStore(app);
-
-  return store;
+  return createStore();
 }
 
 export default configureStore
